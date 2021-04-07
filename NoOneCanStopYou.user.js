@@ -3,7 +3,7 @@
 // @description   A full featured Mod menu for game Krunker.io!
 // @version       4.0.0
 // @author        LittleLooney
-// @icon          https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpaperaccess.com%2Fblue-fire-skull&psig=AOvVaw1hx9uyNTn3AOgAhct1R0qo&ust=1617735078253000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOiMpfni5-8CFQAAAAAdAAAAABAD
+// @icon          https://th.bing.com/th/id/Rc8df86ca449e789b2ec5eafaaa05b8bd?rik=CSowrozh3RKGDg&riu=http%3a%2f%2fbestanimations.com%2fHumans%2fSkulls%2fskull-flame-burning-animation-gif-7.gif&ehk=2GK33oKvjuivMEhCTlKX2rQy1M9mMe7uE0u5O2JuTko%3d&risl=&pid=ImgRaw
 // @match         *://krunker.io/*
 // @exclude       *://krunker.io/editor*
 // @exclude       *://krunker.io/social*
@@ -252,7 +252,7 @@
                     html: () => this.generateSetting("checkbox", "showSkidBtn", this),
                     set: (value, init) => {
                         let button = document.getElementById("mainButton");
-                        if (!this.isDefined(button)) this.createButton("chaos", "https://im3.ezgif.com/tmp/ezgif-3-c180b6c53ef5.gif", this.toggleMenu, value)
+                        if (!this.isDefined(button)) this.createButton("chaos", "https://th.bing.com/th/id/OIP.bdLcxy3ZkEwvplfVYQVaegHaNK?pid=ImgDet&rs=1", this.toggleMenu, value)
                         else button.style.display = value ? "inherit" : "none";
                     }
                 },
@@ -522,7 +522,7 @@
                     if (!skid.db.objectStoreNames.contains('settings')) { // if there's no "settings" store
                         skid.db.createObjectStore('settings', {keyPath: 'id'}); // create it
                     }
-                  
+
                 };
 
                 openRequest.onerror = event => {
@@ -1721,4 +1721,4 @@
 
 
 //window.instructionHolder.style.display = "block";
-      //  window.instructions.innerHTML = `<div id="settHolder"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpaperaccess.com%2Fblue-fire-skull&psig=AOvVaw1hx9uyNTn3AOgAhct1R0qo&ust=1617735078253000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOiMpfni5-8CFQAAAAAdAAAAABAD' target='_blank.'><div class="imageButton discordSocial"></div></a>`
+      //  window.instructions.innerHTML = `<div id="settHolder"><img src="https://th.bing.com/th/id/OIP.bdLcxy3ZkEwvplfVYQVaegHaNK?pid=ImgDet&rs=1' target='_blank.'><div class="imageButton discordSocial"></div></a>`
